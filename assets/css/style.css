@@ -1,0 +1,69 @@
+@font-face{
+  font-family: 'LarishNeueSemibold';
+  src: url(assets/fonts/LarishNeueSemibold.woff);
+}
+
+span{
+  display: block;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+body{
+  font-family: 'LarishNeueSemibold';
+  margin: 0;
+}
+
+.header, .main{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.title{
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header-features{
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.header-button{
+  padding: 12px 32px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  max-width: 100%;
+}
+
+.header-button:hover{
+  background-color: rgb(36, 35, 35);
+}
+
+.header-button:focus{
+  outline: none;
+}
+
+.header-button:active{
+  background-color: transparent;
+}
+
+.main-firstarticle{
+  font-size: 50px;
+  margin: 5%;
+  text-align: left;
+}
