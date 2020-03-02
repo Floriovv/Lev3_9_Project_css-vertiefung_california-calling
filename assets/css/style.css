@@ -1,9 +1,12 @@
 @font-face{
   font-family: 'LarishNeueSemibold';
-  src: url(assets/fonts/LarishNeueSemibold.woff);
+  font-display: auto;
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/LarishNeueSemibold.woff2') format('woff2'), url('../fonts/LarishNeueSemibold.woff') format('woff');
 }
 
-span{
+.title-span{
   display: block;
   -webkit-text-fill-color: #000;
   -webkit-text-stroke-width: 1px;
@@ -13,6 +16,10 @@ span{
 body{
   font-family: 'LarishNeueSemibold';
   margin: 0;
+}
+
+.title-paragraph{
+  margin: 1px;
 }
 
 .header, .main{
@@ -34,6 +41,7 @@ h1{
   font-size: 50px;
   text-transform: uppercase;
   margin: 0;
+  height: 100%;
 }
 
 .header-features{
@@ -63,7 +71,65 @@ h1{
 }
 
 .main-firstarticle{
-  font-size: 50px;
-  margin: 5%;
+  font-size: 65px;
+  margin-top: 20%;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
   text-align: left;
+  width: 50%;
+}
+
+.main-secondarticle{
+  background-color: #fff;
+  height: 100vh;
+}
+
+.main-animations{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker{
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 100px;
+  overflow: hidden;
+  POSITION: ABSOLUTE;
+  top: 0;
+  right: -45%;
+  width: 1920px;
+}
+
+.animation-paragraph1{
+  margin: 0;
+  position: absolute;
+  right: -15%;
+  top: 0;
+  color: #000;
+  font-size: 100px;
+  background-color: #fff;
+  line-height: 100px;
+  animation-name: ticker;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.animation-span{
+  -webkit-text-fill-color: #fff;
+  -moz-text-fill-color: #fff;
+  text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-width: 1px;
+  text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  -moz-text-stroke-color: #000;
+  text-stroke-color: #000;
+}
+
+@keyframes ticker {
+  0% { text-indent: -50%; }
+  100% { text-indent: 49%;}
 }
